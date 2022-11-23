@@ -175,16 +175,6 @@ End
 		  
 		  self.loadTextureFromPNGFile( SpecialFolder.Resources.NativePath + "/toast-burnt.png" )
 		  
-		  path = SpecialFolder.Resources.NativePath + "/smoke_*.png"
-		  
-		  for i as Integer = 0 to 31
-		    
-		    var s as String = path.ReplaceAll( "*", i.ToString( Locale.Current, "0000" ) )
-		    
-		    self.loadTextureFromPNGFile( s )
-		    
-		  next
-		  
 		  // self.loadTextureFromFile
 		  // self.loadTextureFromPNGFile
 		  

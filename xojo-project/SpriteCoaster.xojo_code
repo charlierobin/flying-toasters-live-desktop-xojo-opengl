@@ -3,7 +3,7 @@ Protected Class SpriteCoaster
 Inherits Sprite
 	#tag Method, Flags = &h0
 		Sub Constructor()
-		  me.index = System.Random.InRange( 0, 130 )
+		  me.index = System.Random.InRange( 0, 63 )
 		  
 		  me.state = States.Flapping
 		  
@@ -14,11 +14,11 @@ Inherits Sprite
 		Sub update(factor as Single)
 		  super.update( factor )
 		  
+		  me.index = me.index + 1
+		  
 		  select case me.state
 		    
 		  case States.Flapping
-		    
-		    me.index = me.index + 1
 		    
 		    if me.index > 63 then
 		      
@@ -38,8 +38,6 @@ Inherits Sprite
 		    
 		  case States.StartingToCoast
 		    
-		    me.index = me.index + 1
-		    
 		    if me.index > 86 then
 		      
 		      me.state = States.Coasting
@@ -47,8 +45,6 @@ Inherits Sprite
 		    end if
 		    
 		  case States.Coasting
-		    
-		    me.index = me.index + 1
 		    
 		    if me.index > 110 then
 		      
@@ -67,8 +63,6 @@ Inherits Sprite
 		    end if
 		    
 		  case States.FinishingCoast
-		    
-		    me.index = me.index + 1
 		    
 		    if me.index > 130 then
 		      

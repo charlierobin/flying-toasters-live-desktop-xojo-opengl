@@ -10,7 +10,7 @@ I am working on a proper screensaver version, but I thought it would be fun to s
 
 There’s a very rudimentary preferences window for choosing which monitors it displays on. No preferences files or anything like that are written to hard drive, as I just could not be bothered.
 
-[Flying Toasters Desktop macOS universal binary zipped for download](https://dl.dropboxusercontent.com/s/rqcjp4xb7m827tv/FlyingToastersLiveDesktop.zip?dl=0)
+[Flying Toasters Desktop macOS universal binary zipped for download](https://github.com/charlierobin/flying-toasters-live-desktop-xojo-opengl/releases/download/v1.0.0/FlyingToastersLiveDesktop.zip)
 
 Only tested on macOS Catalina (10.15) at the moment, but there’s no reason it shouldn’t be okay on Big Sur, Monterey and Ventura. The zipped binary available for download above is for both Intel and the new Apple silicon.
 
